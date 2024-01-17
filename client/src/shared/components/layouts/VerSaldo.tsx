@@ -4,6 +4,7 @@ import formatNumberToString from "../../../utils/formatNumber";
 import { nonVisibleNumber } from "../../../utils/formatNumber";
 import { EyeClosed } from "@phosphor-icons/react";
 import { Eye } from "@phosphor-icons/react";
+import { TYPOGRAPHIES } from "../../theme/theme";
 
 type VerSaldoType = {
   value: number;
@@ -17,12 +18,12 @@ function VerSaldo({ value }: VerSaldoType) {
 
   return (
     <CustomContainer>
-      <span>Saldo disponible</span>
-      <div>
+      <span style={TYPOGRAPHIES.span}>Saldo disponible</span>
+      <div style={{ height: "65px" }}>
         {showValue ? (
-          <h1>{`$${formatNumberToString(value)}`}</h1>
+          <h1 style={TYPOGRAPHIES.h1}>{`$${formatNumberToString(value)}`}</h1>
         ) : (
-          <h1 style={{ height: "73px" }}>{`*${nonVisibleNumber(value)}`}</h1>
+          <h1 style={TYPOGRAPHIES.h1}>{`*${nonVisibleNumber(value)}`}</h1>
         )}
 
         {showValue ? (
@@ -40,19 +41,9 @@ const CustomContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  span {
-    font-size: 18px;
-  }
-
   div {
     display: flex;
     gap: 15px;
-
-    h1 {
-      font-size: 55px;
-      font-weight: normal;
-      line-height: normal;
-    }
   }
 `;
 

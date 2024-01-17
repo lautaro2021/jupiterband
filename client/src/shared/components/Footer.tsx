@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme/theme";
+import { PALETTE } from "../theme/theme";
 import { footerOptions } from "../models/footerOptions.model";
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
 const CustomFooter = styled.section`
   height: 100px;
   border-radius: 30px 30px 0px 0px;
-  background-color: ${theme.neutral};
+  background-color: ${PALETTE.neutral};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ const CustomFooter = styled.section`
       justify-content: center;
 
       div {
-        background-color: ${theme.primary};
+        background-color: ${PALETTE.primary};
         width: 55px;
         height: 55px;
         border-radius: 100%;

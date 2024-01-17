@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { CustomLink } from "../../styled/CustomLink";
 import { CustomContainer } from "../../styled/CustomContainer";
+import { PALETTE, TYPOGRAPHIES } from "../../../theme/theme";
 
 function Header() {
   return (
@@ -8,8 +9,12 @@ function Header() {
       width="100%"
       flexDirection="row"
     >
-      <Link to="/">Últimas transacciones</Link>
-      <Link to="/">Ver todas</Link>
+      <CustomLink to="/" color={PALETTE.neutralWhite}>
+        <h4 style={TYPOGRAPHIES.h4}>Últimas transacciones</h4>
+      </CustomLink>
+      <CustomLink to="/" color={PALETTE.neutralWhite}>
+        <h4 style={TYPOGRAPHIES.h4}>Ver todas</h4>
+      </CustomLink>
     </CustomContainer>
   );
 }

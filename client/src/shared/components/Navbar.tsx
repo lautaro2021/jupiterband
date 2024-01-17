@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../theme/theme";
+import { PALETTE } from "../theme/theme";
 
 function Navbar() {
   return (
@@ -41,7 +41,7 @@ const StyledNavbar = styled.section`
         width: 38px;
         height: 38px;
         border-radius: 100%;
-        background-color: ${theme.primary};
+        background-color: ${PALETTE.primary};
       }
     }
   }

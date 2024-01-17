@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../theme/theme";
 import { HTMLAttributes } from "react";
 
 type CardType = {
@@ -23,7 +22,7 @@ interface CustomCardProps extends HTMLAttributes<HTMLElement> {
   fullSize?: boolean;
 }
 
-const CustomCard = styled.article<CustomCardProps>`
+const CustomCard = styled.section<CustomCardProps>`
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -39,15 +38,6 @@ const CustomCard = styled.article<CustomCardProps>`
   
   `
       : `width: 50%`};
-
-  picture {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    background-color: ${theme.neutralWhite};
-    border-radius: 999px;
-  }
 
   span {
     margin-top: 8px;

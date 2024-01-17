@@ -4,4 +4,5 @@ export interface ContainerProps {
   gap?: string;
   width?: string;
   flexDirection: string;
+  margin?: string;
 }
