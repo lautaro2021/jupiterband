@@ -9,10 +9,10 @@ import styled from "styled-components";
 function MediosDePago() {
   const padding = "30px 26px 25px";
   return (
-    <CustomContainer gap={"15px"} flexDirection="row">
+    <CustomContainer gap={"15px"} flexdirection="row">
       {mediosData.map((card, index) => (
         <Card color={card.color} key={index} padding={padding}>
-          <CustomContainer alignItems="center" flexDirection="column">
+          <CustomContainer alignitems="center" flexdirection="column">
             <CustomIcon>
               <card.icon />
             </CustomIcon>

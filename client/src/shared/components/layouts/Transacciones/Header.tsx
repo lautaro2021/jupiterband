@@ -5,14 +5,14 @@ import { PALETTE, TYPOGRAPHIES } from "../../../theme/theme";
 function Header() {
   return (
     <CustomContainer
-      justifyContent="space-between"
+      justifycontent="space-between"
       width="100%"
-      flexDirection="row"
+      flexdirection="row"
     >
-      <CustomLink to="/" color={PALETTE.neutralWhite}>
+      <CustomLink to="/" color={PALETTE.neutralWhite} flexdirection="row">
         <h4 style={TYPOGRAPHIES.h4}>Últimas transacciones</h4>
       </CustomLink>
-      <CustomLink to="/" color={PALETTE.neutralWhite}>
+      <CustomLink to="/" color={PALETTE.neutralWhite} flexdirection="row">
         <h4 style={TYPOGRAPHIES.h4}>Ver todas</h4>
       </CustomLink>
     </CustomContainer>

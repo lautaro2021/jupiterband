@@ -1,8 +1,10 @@
 export interface ContainerProps {
-  alignItems?: string;
-  justifyContent?: string;
+  alignitems?: string;
+  justifycontent?: string;
   gap?: string;
   width?: string;
-  flexDirection: string;
+  flexdirection: string;
   margin?: string;
+  height?: string;
+  position?: string;
 }

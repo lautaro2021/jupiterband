@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 const paths: Record<string, string> = {
   "/": "/",
   "/tarjetas": "/tarjetas",
-  "/dispositivos": "/dispositivo",
+  "/dispositivos": "/dispositivos",
   "/perfil": "/perfil",
 };
 

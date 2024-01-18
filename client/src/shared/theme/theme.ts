@@ -42,10 +42,10 @@ export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
     fontStyle: "normal",
   },
   h2: {
-    fontSize: "",
-    fontWeight: "",
-    lineHeight: "",
-    fontStyle: "",
+    fontSize: "35px",
+    fontWeight: "500",
+    lineHeight: "normal",
+    fontStyle: "normal",
   },
   h3: {
     fontSize: "22px",

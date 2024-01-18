@@ -17,14 +17,14 @@ function TransaccionRow({
 }: TransactionType) {
   return (
     <CustomArticleContainer
-      flexDirection="row"
-      justifyContent="space-between"
-      alignItems="center"
+      flexdirection="row"
+      justifycontent="space-between"
+      alignitems="center"
       width="100%"
     >
-      <CustomContainer flexDirection="row" alignItems="center" gap="8px">
+      <CustomContainer flexdirection="row" alignitems="center" gap="8px">
         <ProductImage productName={productDescription} />
-        <CustomContainer flexDirection="column">
+        <CustomContainer flexdirection="column">
           <h5 style={TYPOGRAPHIES.h5}>{productDescription}</h5>
           <h6
             style={addStyleProps(
@@ -36,7 +36,7 @@ function TransaccionRow({
           </h6>
         </CustomContainer>
       </CustomContainer>
-      <CustomContainer flexDirection="column" alignItems="flex-end">
+      <CustomContainer flexdirection="column" alignitems="flex-end">
         <h5>{`$${formatNumberToString(amount)}`}</h5>
         <CustomTransactionStatus status={transactionStatus}>
           {transactionStatus}

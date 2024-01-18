@@ -1,6 +1,6 @@
 import { PALETTE } from "../theme/theme";
 import { Plus } from "@phosphor-icons/react";
-import { Wallet } from "@phosphor-icons/react";
+import { Cards } from "@phosphor-icons/react";
 
 export type MediosType = {
   color: string;
@@ -20,6 +20,6 @@ export const mediosData: MediosType[] = [
     path: "/",
     color: PALETTE.darkGrey,
     title: "Tarjetas vinculadas",
-    icon: () => <Wallet size={20} color={PALETTE.neutralBlack} weight="bold" />,
+    icon: () => <Cards size={20} color={PALETTE.neutralBlack} weight="bold" />,
   },
 ];
