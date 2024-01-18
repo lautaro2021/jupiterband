@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PALETTE } from "../theme/theme";
+import { PALETTE, TYPOGRAPHIES } from "../theme/theme";
 import { footerOptions } from "../models/footerOptions.model";
 
 function Footer() {
@@ -10,8 +10,8 @@ function Footer() {
           <li key={i}>
             {option.title ? (
               <>
-                <img src={option.img} />
-                <span>{option.title}</span>
+                {option.Img && <option.Img />}
+                <h6 style={TYPOGRAPHIES.h6}>{option.title}</h6>
               </>
             ) : (
               <div></div>
@@ -39,7 +39,7 @@ const CustomFooter = styled.section`
   ul {
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
     padding: 0;
 

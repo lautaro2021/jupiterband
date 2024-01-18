@@ -3,9 +3,9 @@ import {
   CustomContainer,
 } from "../../styled/CustomContainer";
 import { CustomTransactionStatus } from "../../styled/TransactionStatus";
-import formatNumberToString from "../../../../utils/formatNumber";
-import { ProductImage } from "../../../../utils/ProductImage";
-import { addStyleProps } from "../../../../utils/addStyleProps";
+import formatNumberToString from "../../../../utils/formatNumber.util";
+import { ProductImage } from "../../ProductImage";
+import { addStyleProps } from "../../../../utils/addStyleProps.util";
 import type { TransactionType } from "../../../models/estadoTransaccion.model";
 import { PALETTE, TYPOGRAPHIES } from "../../../theme/theme";
 
