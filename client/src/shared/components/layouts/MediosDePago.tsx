@@ -1,7 +1,7 @@
 import Card from "../Card";
 import { mediosData } from "../../models/mediosDePage.model";
 import { CustomContainer } from "../styled/CustomContainer";
-import { addStyleProps } from "../../../utils/addStyleProps";
+import { addStyleProps } from "../../../utils/addStyleProps.util";
 import { TYPOGRAPHIES } from "../../theme/theme";
 import { PALETTE } from "../../theme/theme";
 import styled from "styled-components";

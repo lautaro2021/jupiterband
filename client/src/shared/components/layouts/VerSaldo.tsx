@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import formatNumberToString from "../../../utils/formatNumber";
-import { nonVisibleNumber } from "../../../utils/formatNumber";
+import formatNumberToString from "../../../utils/formatNumber.util";
+import { nonVisibleNumber } from "../../../utils/formatNumber.util";
 import { EyeClosed } from "@phosphor-icons/react";
 import { Eye } from "@phosphor-icons/react";
 import { TYPOGRAPHIES } from "../../theme/theme";
