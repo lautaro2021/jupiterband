@@ -20,7 +20,7 @@ const CustomBackground = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("/public/backgrounds/profile.png");
+  background-image: url("/backgrounds/profile.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
