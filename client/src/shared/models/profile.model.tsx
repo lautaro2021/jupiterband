@@ -4,7 +4,8 @@ import { SignOut } from "@phosphor-icons/react";
 export type ProfileOptionType = {
   text: string;
   path: string;
-  Icon: () => JSX.Element;
+  Icon?: () => JSX.Element;
+  value?: string;
   exit?: boolean;
 };
 

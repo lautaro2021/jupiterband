@@ -43,7 +43,8 @@ export type TypographiesType =
   | "label"
   | "button"
   | "setterButton"
-  | "balanceInput";
+  | "balanceInput"
+  | "userValue";
 
 export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
   h1: {
@@ -97,6 +98,12 @@ export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
   setterButton: {
     fontSize: "17px",
     fontWeight: "500",
+    lineHeight: "normal",
+    fontStyle: "normal",
+  },
+  userValue: {
+    fontSize: "17px",
+    fontWeight: "400",
     lineHeight: "normal",
     fontStyle: "normal",
   },

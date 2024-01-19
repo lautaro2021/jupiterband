@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TYPOGRAPHIES } from "../../../theme/theme";
 
-function ProfileImage({ name }: { name: string }) {
+function ProfileImage({ name }: { name?: string }) {
   return (
     <CustomProfileImage>
       <picture></picture>
