@@ -3,7 +3,7 @@ export interface ContainerProps {
   justifycontent?: string;
   gap?: string;
   width?: string;
-  flexdirection: string;
+  flexdirection: "row" | "column";
   margin?: string;
   height?: string;
   position?: string;

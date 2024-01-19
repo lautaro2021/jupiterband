@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router";
 import { CaretLeft } from "@phosphor-icons/react";
 import styled from "styled-components";
 import { PALETTE } from "../theme/theme";
 
 function BackArrow() {
+  const navigate = useNavigate();
+
+  const handleBack = () => navigate(-1);
+
   return (
-    <CustomBackArrowContainer>
+    <CustomBackArrowContainer onClick={handleBack}>
       <CaretLeft color={PALETTE.neutralWhite} weight="bold" size={20} />
     </CustomBackArrowContainer>
   );

@@ -17,7 +17,7 @@ export const mediosData: MediosType[] = [
     icon: () => <Plus size={20} color={PALETTE.neutralBlack} weight="bold" />,
   },
   {
-    path: "/",
+    path: "/tarjetas",
     color: PALETTE.darkGrey,
     title: "Tarjetas vinculadas",
     icon: () => <Cards size={20} color={PALETTE.neutralBlack} weight="bold" />,

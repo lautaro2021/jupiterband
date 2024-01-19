@@ -9,4 +9,5 @@ export const CustomLink = styled(Link)<ContainerProps>`
   align-items: ${(props) => props.alignitems};
   justify-content: ${(props) => props.justifycontent};
   color: ${(props) => props.color};
+  width: ${(props) => props.width};
 `;
