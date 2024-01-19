@@ -22,7 +22,7 @@ export const PALETTE: Record<Palette, string> = {
   aquamarine: "#38D7C0",
   lightGrey: "#494949",
   confirm: "#38D7C0",
-  cancel: "#38D7C0",
+  cancel: "#FF4545",
 };
 
 export type Typography = {

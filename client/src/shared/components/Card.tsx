@@ -1,28 +1,15 @@
 import styled from "styled-components";
 import { HTMLAttributes } from "react";
 
-type CardType = {
-  color: string;
-  padding: string;
-  children?: React.ReactNode;
-  fullsize?: boolean;
-};
-
-function Card({ color, padding, children, fullsize }: CardType) {
-  return (
-    <CustomCard color={color} padding={padding} fullsize={fullsize}>
-      {children}
-    </CustomCard>
-  );
-}
-
 interface CustomCardProps extends HTMLAttributes<HTMLElement> {
   color?: string;
   padding?: string;
   fullsize?: boolean;
+  absolute?: boolean;
+  margin?: string;
 }
 
-const CustomCard = styled.section<CustomCardProps>`
+const Card = styled.section<CustomCardProps>`
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -30,6 +17,7 @@ const CustomCard = styled.section<CustomCardProps>`
   justify-content: center;
   background: ${(props) => props.color};
   padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
   ${(props) =>
     props.fullsize
       ? `
@@ -38,7 +26,15 @@ const CustomCard = styled.section<CustomCardProps>`
   
   `
       : `width: 50%`};
-
+  ${(props) =>
+    props.absolute
+      ? `
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+  `
+      : ""}
   span {
     margin-top: 8px;
     font-size: 22px;

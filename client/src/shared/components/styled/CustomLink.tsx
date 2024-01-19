@@ -10,4 +10,10 @@ export const CustomLink = styled(Link)<ContainerProps>`
   justify-content: ${(props) => props.justifycontent};
   color: ${(props) => props.color};
   width: ${(props) => props.width};
+  padding: ${(props) => props.padding};
+  border-bottom: ${(props) => props.borderbottom};
+
+  span {
+    margin: 0;
+  }
 `;
