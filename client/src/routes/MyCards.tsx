@@ -1,5 +1,5 @@
 import SubHeader from "../shared/components/SubHeader";
-import MyCardsCarousel from "../shared/components/MyCardsCarousel";
+import Carousel from "../shared/components/Carousel";
 import Transacciones from "../shared/components/layouts/Transacciones/Transacciones";
 import SmallBalance from "../shared/components/layouts/SmallBalance";
 import { transactionFakeData } from "../shared/models/estadoTransaccion.model";
@@ -9,7 +9,7 @@ function MyCards() {
   return (
     <>
       <SubHeader text="Tarjetas vinculadas" />
-      <MyCardsCarousel />
+      <Carousel />
       <SmallBalance value={value} />
       <Transacciones transactionData={transactionFakeData} />
     </>

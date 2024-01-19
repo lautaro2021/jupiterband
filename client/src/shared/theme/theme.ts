@@ -7,7 +7,9 @@ type Palette =
   | "neutralBlack"
   | "greyText"
   | "aquamarine"
-  | "lightGrey";
+  | "lightGrey"
+  | "confirm"
+  | "cancel";
 
 export const PALETTE: Record<Palette, string> = {
   primary: "#6CD3DE",
@@ -19,6 +21,8 @@ export const PALETTE: Record<Palette, string> = {
   greyText: "#777777",
   aquamarine: "#38D7C0",
   lightGrey: "#494949",
+  confirm: "#38D7C0",
+  cancel: "#38D7C0",
 };
 
 export type Typography = {
@@ -37,7 +41,9 @@ export type TypographiesType =
   | "h6"
   | "span"
   | "label"
-  | "button";
+  | "button"
+  | "setterButton"
+  | "balanceInput";
 
 export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
   h1: {
@@ -88,10 +94,22 @@ export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
     lineHeight: "normal",
     fontStyle: "normal",
   },
+  setterButton: {
+    fontSize: "17px",
+    fontWeight: "500",
+    lineHeight: "normal",
+    fontStyle: "normal",
+  },
   label: {
     fontSize: "",
     fontWeight: "",
     lineHeight: "",
     fontStyle: "",
+  },
+  balanceInput: {
+    fontSize: "40px",
+    fontWeight: "500",
+    lineHeight: "normal",
+    fontStyle: "normal",
   },
 };

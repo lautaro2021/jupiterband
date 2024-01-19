@@ -11,7 +11,7 @@ export type MediosType = {
 
 export const mediosData: MediosType[] = [
   {
-    path: "/",
+    path: "/recargar-saldo",
     color: "linear-gradient(98deg, #6CD3DE -10.31%, #53A9E1 118.95%);",
     title: "Recargar Saldo",
     icon: () => <Plus size={20} color={PALETTE.neutralBlack} weight="bold" />,

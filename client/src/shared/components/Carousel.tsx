@@ -13,7 +13,7 @@ const SPRING_OPTIONS = {
   damping: 60,
 };
 
-const MyCardsCarousel = () => {
+const Carousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
@@ -123,4 +123,4 @@ const Dot = styled.button`
   }
 `;
 
-export default MyCardsCarousel;
+export default Carousel;
