@@ -2,7 +2,7 @@ import { HouseSimple } from "@phosphor-icons/react";
 import { Devices } from "@phosphor-icons/react";
 import { User } from "@phosphor-icons/react";
 import { Cards } from "@phosphor-icons/react";
-import { useGetPath } from "../../utils/usePath.util";
+import { useGetPath } from "../hooks/usePath";
 
 type Option = {
   path: string;

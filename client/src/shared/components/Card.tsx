@@ -5,12 +5,12 @@ type CardType = {
   color: string;
   padding: string;
   children?: React.ReactNode;
-  fullSize?: boolean;
+  fullsize?: boolean;
 };
 
-function Card({ color, padding, children, fullSize }: CardType) {
+function Card({ color, padding, children, fullsize }: CardType) {
   return (
-    <CustomCard color={color} padding={padding} fullSize={fullSize}>
+    <CustomCard color={color} padding={padding} fullsize={fullsize}>
       {children}
     </CustomCard>
   );
@@ -19,7 +19,7 @@ function Card({ color, padding, children, fullSize }: CardType) {
 interface CustomCardProps extends HTMLAttributes<HTMLElement> {
   color?: string;
   padding?: string;
-  fullSize?: boolean;
+  fullsize?: boolean;
 }
 
 const CustomCard = styled.section<CustomCardProps>`
@@ -31,7 +31,7 @@ const CustomCard = styled.section<CustomCardProps>`
   background: ${(props) => props.color};
   padding: ${(props) => props.padding};
   ${(props) =>
-    props.fullSize
+    props.fullsize
       ? `
     width: 100%;
     max-width: none;

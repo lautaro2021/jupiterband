@@ -5,7 +5,8 @@ type Palette =
   | "darkGrey"
   | "neutralWhite"
   | "neutralBlack"
-  | "greyText";
+  | "greyText"
+  | "aquamarine";
 
 export const PALETTE: Record<Palette, string> = {
   primary: "#6CD3DE",
@@ -15,6 +16,7 @@ export const PALETTE: Record<Palette, string> = {
   neutralWhite: "#FFF",
   neutralBlack: "#000",
   greyText: "#777777",
+  aquamarine: "#38D7C0",
 };
 
 export type Typography = {
@@ -32,7 +34,8 @@ export type TypographiesType =
   | "h5"
   | "h6"
   | "span"
-  | "label";
+  | "label"
+  | "button";
 
 export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
   h1: {
@@ -42,10 +45,10 @@ export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
     fontStyle: "normal",
   },
   h2: {
-    fontSize: "",
-    fontWeight: "",
-    lineHeight: "",
-    fontStyle: "",
+    fontSize: "35px",
+    fontWeight: "500",
+    lineHeight: "normal",
+    fontStyle: "normal",
   },
   h3: {
     fontSize: "22px",
@@ -74,6 +77,12 @@ export const TYPOGRAPHIES: Record<TypographiesType, Typography> = {
   span: {
     fontSize: "18px",
     fontWeight: "400",
+    lineHeight: "normal",
+    fontStyle: "normal",
+  },
+  button: {
+    fontSize: "14px",
+    fontWeight: "500",
     lineHeight: "normal",
     fontStyle: "normal",
   },

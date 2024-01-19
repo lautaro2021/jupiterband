@@ -7,10 +7,10 @@ import { transactionFakeData } from "../../../models/estadoTransaccion.model";
 
 function Transacciones() {
   return (
-    <Card color={PALETTE.darkGrey} padding="18px 24px" fullSize>
+    <Card color={PALETTE.darkGrey} padding="18px 24px" fullsize>
       <Header />
       <CustomContainer
-        flexDirection="column"
+        flexdirection="column"
         width="100%"
         gap="15px"
         margin="20px 0px 0px 0px"

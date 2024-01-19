@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CustomLink } from "./styled/CustomLink";
 import { PALETTE, TYPOGRAPHIES } from "../theme/theme";
 import { footerOptions } from "../models/footerOptions.model";
 
@@ -8,15 +9,23 @@ function Footer() {
       <ul>
         {footerOptions.map((option, i) => (
           <li key={i}>
-            {option.title ? (
-              <>
-                {option.Img && <option.Img />}
-                <h6 style={TYPOGRAPHIES.h6}>{option.title}</h6>
-              </>
-            ) : (
-              <div></div>
-            )}
-            <></>
+            <CustomLink
+              to={option.path}
+              flexdirection="column"
+              alignitems="center"
+              justifycontent="center"
+              color={PALETTE.neutralWhite}
+            >
+              {option.title ? (
+                <>
+                  {option.Img && <option.Img />}
+                  <h6 style={TYPOGRAPHIES.h6}>{option.title}</h6>
+                </>
+              ) : (
+                <div></div>
+              )}
+              <></>
+            </CustomLink>
           </li>
         ))}
       </ul>
