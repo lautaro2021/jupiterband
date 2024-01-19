@@ -6,6 +6,7 @@ import Devices from "./routes/Devices";
 import Profile from "./routes/Profile";
 import Transactions from "./routes/Transactions";
 import RechargeBalance from "./routes/RechargeBalance";
+import PersonalInformation from "./routes/ProfileOptions/PersonalInformation";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/recargar-saldo",
         element: <RechargeBalance />,
+      },
+      {
+        path: "/perfil/datos-personales",
+        element: <PersonalInformation />,
       },
     ],
   },

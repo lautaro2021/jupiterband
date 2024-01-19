@@ -14,6 +14,6 @@ export const CustomLink = styled(Link)<ContainerProps>`
   border-bottom: ${(props) => props.borderbottom};
 
   span {
-    margin: 0;
+    margin-top: 0px;
   }
 `;
