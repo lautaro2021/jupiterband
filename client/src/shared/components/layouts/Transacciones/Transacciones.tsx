@@ -3,24 +3,36 @@ import { CustomContainer } from "../../styled/CustomContainer";
 import Card from "../../Card";
 import TransaccionRow from "./TransaccionRow";
 import { PALETTE } from "../../../theme/theme";
-import { transactionFakeData } from "../../../models/estadoTransaccion.model";
+import type { TransactionType } from "../../../models/estadoTransaccion.model";
 
-function Transacciones() {
+function Transacciones({
+  header = true,
+  size,
+  transactionData,
+}: {
+  header?: boolean;
+  size?: "md";
+  transactionData: TransactionType[];
+}) {
+  const transactionParsedData =
+    size === "md" ? transactionData : transactionData.slice(-3);
+
   return (
     <Card color={PALETTE.darkGrey} padding="18px 24px" fullsize>
-      <Header />
+      {header && <Header />}
       <CustomContainer
         flexdirection="column"
         width="100%"
         gap="15px"
-        margin="20px 0px 0px 0px"
+        margin={!size ? "20px 0px 0px 0px" : ""}
       >
-        {transactionFakeData.map((tr, index) => (
+        {transactionParsedData.map((tr, index) => (
           <TransaccionRow
             productDescription={tr.productDescription}
             date={tr.date}
             amount={tr.amount}
             transactionStatus={tr.transactionStatus}
+            size={size}
             key={index}
           />
         ))}

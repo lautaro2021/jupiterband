@@ -2,7 +2,7 @@ import BackArrow from "./BackArrow";
 import { CustomContainer } from "./styled/CustomContainer";
 import { TYPOGRAPHIES } from "../theme/theme";
 
-function SubHeader() {
+function SubHeader({ text }: { text: string }) {
   return (
     <CustomContainer
       flexdirection="row"
@@ -12,7 +12,7 @@ function SubHeader() {
       height="32px"
     >
       <BackArrow />
-      <span style={TYPOGRAPHIES.span}>Tarjetas vinculadas</span>
+      <span style={TYPOGRAPHIES.span}>{text}</span>
     </CustomContainer>
   );
 }

@@ -13,58 +13,7 @@ const SPRING_OPTIONS = {
   damping: 60,
 };
 
-const Container = styled.div`
-  position: relative;
-  overflow: hidden;
-`;
-
-const InnerContainer = styled(motion.div)`
-  display: flex;
-  cursor: grab;
-
-  &.active {
-    cursor: grabbing;
-  }
-`;
-
-const ImagesContainer = styled.div`
-  display: flex;
-`;
-
-const Image = styled(motion.img)`
-  aspect-ratio: 16/9;
-  flex-shrink: 0;
-  border-radius: 15px;
-  object-fit: cover;
-  height: 178px;
-  width: 100%;
-`;
-
-const DotsContainer = styled.div`
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 0.5rem;
-`;
-
-const Dot = styled.button`
-  height: 8px;
-  width: 8px;
-  border-radius: 100%;
-  transition: background-color 0.3s ease-in-out;
-  background-color: #444444;
-  border: none;
-
-  &.active {
-    height: 10px;
-    width: 10px;
-    background-color: #53a9e1;
-  }
-`;
-
-const SwipeCarousel = () => {
+const Carousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
@@ -123,4 +72,55 @@ const SwipeCarousel = () => {
   );
 };
 
-export default SwipeCarousel;
+const Container = styled.div`
+  position: relative;
+  overflow: hidden;
+`;
+
+const InnerContainer = styled(motion.div)`
+  display: flex;
+  cursor: grab;
+
+  &.active {
+    cursor: grabbing;
+  }
+`;
+
+const ImagesContainer = styled.div`
+  display: flex;
+`;
+
+const Image = styled(motion.img)`
+  aspect-ratio: 16/9;
+  flex-shrink: 0;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 178px;
+  width: 100%;
+`;
+
+const DotsContainer = styled.div`
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+`;
+
+const Dot = styled.button`
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #444444;
+  border: none;
+
+  &.active {
+    height: 10px;
+    width: 10px;
+    background-color: #53a9e1;
+  }
+`;
+
+export default Carousel;

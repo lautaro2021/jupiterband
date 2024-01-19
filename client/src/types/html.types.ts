@@ -7,4 +7,6 @@ export interface ContainerProps {
   margin?: string;
   height?: string;
   position?: string;
+  borderbottom?: string;
+  padding?: string;
 }

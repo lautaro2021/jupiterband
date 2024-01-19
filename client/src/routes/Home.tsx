@@ -1,6 +1,7 @@
 import VerSaldo from "../shared/components/layouts/VerSaldo";
 import MediosDePago from "../shared/components/layouts/MediosDePago";
 import Transacciones from "../shared/components/layouts/Transacciones/Transacciones";
+import { transactionFakeData } from "../shared/models/estadoTransaccion.model";
 
 function Root() {
   const value = 21000;
@@ -8,7 +9,7 @@ function Root() {
     <>
       <VerSaldo value={value} />
       <MediosDePago />
-      <Transacciones />
+      <Transacciones transactionData={transactionFakeData} />
     </>
   );
 }

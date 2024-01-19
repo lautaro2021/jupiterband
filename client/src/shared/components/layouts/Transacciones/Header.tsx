@@ -9,10 +9,12 @@ function Header() {
       width="100%"
       flexdirection="row"
     >
-      <CustomLink to="/" color={PALETTE.neutralWhite} flexdirection="row">
-        <h4 style={TYPOGRAPHIES.h4}>Últimas transacciones</h4>
-      </CustomLink>
-      <CustomLink to="/" color={PALETTE.neutralWhite} flexdirection="row">
+      <h4 style={TYPOGRAPHIES.h4}>Últimas transacciones</h4>
+      <CustomLink
+        to="/transacciones"
+        color={PALETTE.neutralWhite}
+        flexdirection="row"
+      >
         <h4 style={TYPOGRAPHIES.h4}>Ver todas</h4>
       </CustomLink>
     </CustomContainer>
