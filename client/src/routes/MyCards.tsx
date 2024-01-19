@@ -1,16 +1,16 @@
 import SubHeader from "../shared/components/SubHeader";
 import Transacciones from "../shared/components/layouts/Transacciones/Transacciones";
-import SeeBalanceSmall from "../shared/components/layouts/seeBalanceSmall";
+import SmallBalance from "../shared/components/layouts/SmallBalance";
 
-function Cards() {
+function MyCards() {
   const value = 21000;
   return (
     <>
       <SubHeader />
-      <SeeBalanceSmall value={value} />
+      <SmallBalance value={value} />
       <Transacciones />
     </>
   );
 }
 
-export default Cards;
+export default MyCards;

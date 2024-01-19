@@ -4,7 +4,7 @@ import ActionButton from "../ActionButton";
 import { TYPOGRAPHIES, PALETTE } from "../../theme/theme";
 import formatNumberToString from "../../../utils/formatNumber.util";
 
-function SeeBalanceSmall({ value }: { value: number }) {
+function SmallBalance({ value }: { value: number }) {
   return (
     <CustomContainer flexdirection="column" width="100%" gap="8px">
       <span style={TYPOGRAPHIES.span}>Saldo disponible</span>
@@ -28,4 +28,4 @@ function SeeBalanceSmall({ value }: { value: number }) {
   );
 }
 
-export default SeeBalanceSmall;
+export default SmallBalance;

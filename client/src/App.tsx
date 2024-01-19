@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
 import Home from "./routes/Home";
-import Cards from "./routes/Cards";
+import MyCards from "./routes/MyCards";
 import Devices from "./routes/Devices";
 import Profile from "./routes/Profile";
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tarjetas",
-        element: <Cards />,
+        element: <MyCards />,
       },
       {
         path: "/dispositivos",
