@@ -14,6 +14,7 @@ function TransaccionRow({
   date,
   amount,
   transactionStatus,
+  size,
 }: TransactionType) {
   return (
     <CustomArticleContainer
@@ -21,6 +22,8 @@ function TransaccionRow({
       justifycontent="space-between"
       alignitems="center"
       width="100%"
+      padding={size === "md" ? "0px 0px 10px 0px" : ""}
+      borderbottom={size === "md" ? `1px solid ${PALETTE.lightGrey}` : ""}
     >
       <CustomContainer flexdirection="row" alignitems="center" gap="8px">
         <ProductImage productName={productDescription} />

@@ -6,7 +6,8 @@ type Palette =
   | "neutralWhite"
   | "neutralBlack"
   | "greyText"
-  | "aquamarine";
+  | "aquamarine"
+  | "lightGrey";
 
 export const PALETTE: Record<Palette, string> = {
   primary: "#6CD3DE",
@@ -17,6 +18,7 @@ export const PALETTE: Record<Palette, string> = {
   neutralBlack: "#000",
   greyText: "#777777",
   aquamarine: "#38D7C0",
+  lightGrey: "#494949",
 };
 
 export type Typography = {

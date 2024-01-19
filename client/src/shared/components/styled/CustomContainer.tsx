@@ -11,6 +11,8 @@ export const CustomContainer = styled.div<ContainerProps>`
   gap: ${(props) => props.gap};
   margin: ${(props) => props.margin};
   position: ${(props) => props.position};
+  border-bottom: ${(props) => props.borderbottom};
+  padding: ${(props) => props.padding};
 `;
 
 export const CustomArticleContainer = styled.article<ContainerProps>`
@@ -23,4 +25,6 @@ export const CustomArticleContainer = styled.article<ContainerProps>`
   gap: ${(props) => props.gap};
   margin: ${(props) => props.margin};
   position: ${(props) => props.position};
+  border-bottom: ${(props) => props.borderbottom};
+  padding: ${(props) => props.padding};
 `;

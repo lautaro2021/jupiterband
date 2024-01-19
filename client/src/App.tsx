@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import MyCards from "./routes/MyCards";
 import Devices from "./routes/Devices";
 import Profile from "./routes/Profile";
+import Transactions from "./routes/Transactions";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/perfil",
         element: <Profile />,
+      },
+      {
+        path: "/transacciones",
+        element: <Transactions />,
       },
     ],
   },
