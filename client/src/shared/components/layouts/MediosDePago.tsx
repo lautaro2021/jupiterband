@@ -17,8 +17,9 @@ function MediosDePago() {
           flexdirection="row"
           width="100%"
           color="white"
+          key={index}
         >
-          <Card color={card.color} key={index} padding={padding} fullsize>
+          <Card color={card.color} padding={padding} fullsize>
             <CustomContainer alignitems="center" flexdirection="column">
               <CustomIcon>
                 <card.icon />
