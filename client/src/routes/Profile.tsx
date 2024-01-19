@@ -1,5 +1,11 @@
+import SubHeader from "../shared/components/SubHeader";
+
 function Profile() {
-  return <div>Profile</div>;
+  return (
+    <>
+      <SubHeader />
+    </>
+  );
 }
 
 export default Profile;

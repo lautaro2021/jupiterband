@@ -1,6 +1,6 @@
-export type ActionButtonType = {
+export type NavigateButtonType = {
   text: string;
   textColor: string;
   bgColor: string;
-  action: () => void;
+  path: string;
 };
