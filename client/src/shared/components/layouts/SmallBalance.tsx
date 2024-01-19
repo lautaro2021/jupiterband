@@ -1,6 +1,6 @@
 import { CustomContainer } from "../styled/CustomContainer";
 import Card from "../Card";
-import ActionButton from "../ActionButton";
+import NavigateButton from "../NavigateButton";
 import { TYPOGRAPHIES, PALETTE } from "../../theme/theme";
 import formatNumberToString from "../../../utils/formatNumber.util";
 
@@ -16,11 +16,11 @@ function SmallBalance({ value }: { value: number }) {
           justifycontent="space-between"
         >
           <h2 style={TYPOGRAPHIES.h2}>{`$${formatNumberToString(value)}`}</h2>
-          <ActionButton
+          <NavigateButton
             text="Recargar saldo"
             textColor={PALETTE.neutralBlack}
             bgColor={PALETTE.aquamarine}
-            action={() => {}}
+            path="/recargar-saldo"
           />
         </CustomContainer>
       </Card>

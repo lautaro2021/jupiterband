@@ -2,7 +2,7 @@ import BackArrow from "./BackArrow";
 import { CustomContainer } from "./styled/CustomContainer";
 import { TYPOGRAPHIES } from "../theme/theme";
 
-function SubHeader({ text }: { text: string }) {
+function SubHeader({ text }: { text?: string }) {
   return (
     <CustomContainer
       flexdirection="row"
