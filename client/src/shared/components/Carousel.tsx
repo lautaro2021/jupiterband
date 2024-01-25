@@ -2,7 +2,11 @@ import { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import styled from "styled-components";
 
-const imgs = ["/img.png", "/img.png", "/img.png"];
+const imgs = [
+  "/backgrounds/creditcard.png",
+  "/backgrounds/creditcard.png",
+  "/backgrounds/creditcard.png",
+];
 
 const DRAG_BUFFER = 50;
 

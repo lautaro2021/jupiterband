@@ -42,7 +42,7 @@ const CustomEventCard = styled.article`
   }
 
   button {
-    margin-top: 15px;
+    margin-top: 13px;
   }
 `;
 
