@@ -18,11 +18,13 @@ function Footer() {
             >
               {option.title ? (
                 <>
-                  {option.Img && <option.Img />}
+                  <option.Img />
                   <h6 style={TYPOGRAPHIES.h6}>{option.title}</h6>
                 </>
               ) : (
-                <div></div>
+                <div>
+                  <option.Img />
+                </div>
               )}
               <></>
             </CustomLink>
@@ -64,6 +66,8 @@ const CustomFooter = styled.section`
         width: 55px;
         height: 55px;
         border-radius: 100%;
+        display: grid;
+        place-content: center;
       }
     }
   }

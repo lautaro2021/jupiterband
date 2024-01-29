@@ -57,6 +57,7 @@ body{
 
 button{
   font-family: SF Pro Display;
+  width: max-content;
 }
 
 *{
