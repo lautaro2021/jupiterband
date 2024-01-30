@@ -1,18 +1,16 @@
 import { CustomLink } from "./styled/CustomLink";
 import styled from "styled-components";
-import { PALETTE } from "../theme/theme";
 import { useSelector } from "react-redux";
 import {
     selectIsAuthenticated,
     selectUser,
 } from "../../redux/reducers/authSlice.slice";
 import LoginButton from "./LoginButton";
+import ProfileImage from "./skeletons/ProfileImage.skeleton";
 
 function Navbar() {
     const isAuthenticated = useSelector(selectIsAuthenticated);
     const user = useSelector(selectUser);
-
-    console.log(user?.picture);
 
     return (
         <StyledNavbar>
@@ -51,7 +49,7 @@ function Navbar() {
                                     title={`${user?.nickname}-profile`}
                                 />
                             ) : (
-                                <div></div>
+                                <ProfileImage size="sm" />
                             )}
                         </CustomLink>
                     ) : (
@@ -93,13 +91,6 @@ const StyledNavbar = styled.section`
                 height: 38px;
                 border-radius: 100%;
                 object-fit: cover;
-            }
-
-            div {
-                width: 38px;
-                height: 38px;
-                border-radius: 100%;
-                background-color: ${PALETTE.aquamarine};
             }
 
             svg {
