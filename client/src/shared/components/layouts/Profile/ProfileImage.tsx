@@ -1,13 +1,20 @@
+import SkeletonProfileImage from "../../skeletons/ProfileImage.skeleton";
 import styled from "styled-components";
 import { TYPOGRAPHIES } from "../../../theme/theme";
 
 function ProfileImage({ name, profile }: { name?: string; profile?: string }) {
     return (
         <CustomProfileImage>
-            <picture>
-                <img src={profile} alt={name} title="profile" />
-            </picture>
-            <h3 style={TYPOGRAPHIES.h3}>{name}</h3>
+            {!name ? (
+                <SkeletonProfileImage size="md" />
+            ) : (
+                <>
+                    <picture>
+                        <img src={profile} alt={name} title="profile" />
+                    </picture>
+                    <h3 style={TYPOGRAPHIES.h3}>{name}</h3>
+                </>
+            )}
         </CustomProfileImage>
     );
 }
